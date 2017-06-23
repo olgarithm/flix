@@ -13,10 +13,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
     var movies: [NSDictionary]?
     var refreshControl: UIRefreshControl!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshControl = UIRefreshControl()
@@ -94,6 +93,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             let movie = movies?[indexPath.row]
             let detailViewController = segue.destination as! DetailViewController
             detailViewController.movie = (movie as! [String : Any])
+            tableView.deselectRow(at: indexPath, animated: true)
         }
         
         // Get the new view controller using segue.destinationViewController.
