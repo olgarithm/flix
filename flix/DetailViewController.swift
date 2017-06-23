@@ -21,6 +21,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        posterImageView.layer.borderWidth = 5
+        posterImageView.layer.borderColor = UIColor.white.cgColor
         if let movie = movie {
             titleLabel.text = movie["title"] as? String
             releaseDateLabel.text = movie["release_date"] as? String
@@ -31,7 +33,7 @@ class DetailViewController: UIViewController {
             
             let backdropURL = URL(string: baseURLString + backdropPathString)!
             backDropImageView.af_setImage(withURL: backdropURL)
-            let posterURL = URL(string: baseURLString + posterPathString)
+            let posterURL = URL(string: baseURLString + posterPathString)!
             posterImageView.af_setImage(withURL: posterURL)
         }
     }

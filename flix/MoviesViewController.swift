@@ -12,6 +12,7 @@ import AFNetworking
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var movies: [NSDictionary]?
     var refreshControl: UIRefreshControl!
@@ -27,6 +28,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func fetchMovies() {
+        activityIndicator.startAnimating()
         let apiKey = "2d751347eb5c652750198b7d5d33c8b4"
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?language=en-US&api_key=\(apiKey)")!
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
@@ -43,6 +45,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
         task.resume()
+        activityIndicator.stopAnimating()
     }
     
     // Makes a network request to get updated data
