@@ -25,7 +25,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
         fetchMovies()
     }
-
+    
     func fetchMovies() {
         activityIndicator.startAnimating()
         let apiKey = "2d751347eb5c652750198b7d5d33c8b4"
@@ -91,7 +91,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = sender as! UITableViewCell
         
         if let indexPath = tableView.indexPath(for: cell) {
-            //cell.selectionStyle = .none rgb(211,211,211)
             let backgroundView = UIView()
             backgroundView.backgroundColor = UIColor.lightGray
             cell.selectedBackgroundView = backgroundView
