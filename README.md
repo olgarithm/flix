@@ -2,7 +2,7 @@
 
 Flix is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **15** hours spent in total
 
 ## User Stories
 
@@ -46,11 +46,13 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+Trying to understand how TableView, ViewControllers, and ImageViews work together was difficult. Also, figuring out how to push data from the ViewController to the DetailedViewController
 ## Credits
 
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
 
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
+- [AlamofireImage] (https://github.com/Alamofire/AlamofireImage) - image component library for Alamofire
 
 ## License
 
