@@ -42,7 +42,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="p3h-o4-LYS">
                                 <rect key="frame" x="176" y="318" width="225" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="1" height="-2"/>
@@ -155,6 +155,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eun-g0-JKa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="SI3-qE-o5L">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -170,7 +171,6 @@
         <!--Superhero Movies-->
         <scene sceneID="Eci-1I-xdh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mb4-45-YQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ftR-yU-fPb" customClass="SuperheroViewController" customModule="flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iK2-d2-XUv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -215,6 +215,7 @@
                         <outlet property="collectionView" destination="VBl-fa-SvN" id="JkI-qG-cdi"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mb4-45-YQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1256" y="1019"/>
         </scene>
