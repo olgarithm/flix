@@ -52,7 +52,7 @@ Trying to understand how TableView, ViewControllers, and ImageViews work togethe
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
 
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
-- [AlamofireImage] (https://github.com/Alamofire/AlamofireImage) - image component library for Alamofire
+- [AlamofireImage](https://github.com/Alamofire/AlamofireImage) - image component library for Alamofire
 
 ## License
 
